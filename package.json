@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Osamadahnoun/Tech-Blog#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^13.0.1",
     "express": "^4.17.2",
     "mysql2": "^2.3.3",
