@@ -21,6 +21,7 @@
     "bcrypt": "^5.0.1",
     "dotenv": "^13.0.1",
     "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
     "mysql2": "^2.3.3",
     "sequelize": "^6.13.0"
   }

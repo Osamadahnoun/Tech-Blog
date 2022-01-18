@@ -1,0 +1,46 @@
+:root {
+    --black: black;
+    --green: #ccdad1;
+}
+
+body {
+    background-color: var(--green);
+}
+.top {
+    background-color: var(--black);
+}
+
+.header {
+   color: var(--green);
+}
+
+.blog {
+    background-color: var(--green);
+    border-radius: 12px;
+}
+
+.one {
+    background-color: var(--black);
+    color: var(--green);
+
+}
+
+.two {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.card {
+    border: solid var(--black);
+    background-color: var(--green);
+}
+
+.btn {
+    background-color: var(--black);
+    color: var(--green);
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
