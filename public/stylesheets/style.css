@@ -44,3 +44,11 @@ a {
     text-decoration: inherit;
     color: inherit;
 }
+
+.btn-no-style {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--green);
+  }
