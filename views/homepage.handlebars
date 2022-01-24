@@ -1,5 +1,5 @@
     {{#each posts as |post|}}
-    <div class="card container-fluid mt-5 w-75 ps-0 pe-0">
+    <div class="card container-fluid mt-5 w-75 ps-0 pe-0 mb-5">
         <ul class="list-group list-group-flush">
           <li class="list-group-item one h3 d-flex justify-content-between"><a href="/post/{{post.id}}">{{ title }}</a><span class="h6">{{ user.username }} on {{ format_date created_at }}</span></li>
           <li class="list-group-item two h5"><a href="/post/{{post.id}}">{{ content }}</a></li>

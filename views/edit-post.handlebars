@@ -1,0 +1,22 @@
+<div class="card container-fluid mt-5 w-75 ps-0 pe-0 container-fluid">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item one h3">Edit Post</li>
+
+          <li class="mb-3 list-group-item two">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Post Title" value="{{post.title}}">
+          </li>
+
+          <li class="mb-3 list-group-item two">
+            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Post Content">{{post.content}}</textarea>
+          </li>
+
+          <li class="mb-3 list-group-item two">
+            <button type="button" class="btn btn-lg col-6 w-100 p-2">Update Post</button>
+          </li>
+          <li class="mb-3 list-group-item two">
+            <button type="button" class="btn btn-lg col-6 w-100 p-2">Delete</button>
+          </li>
+        </ul>
+      </div>

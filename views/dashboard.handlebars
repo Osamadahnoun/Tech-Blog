@@ -1,0 +1,21 @@
+<div class="container-fluid">
+        <div class="row col-lg-2 h2 p-2 m-2">Your Dashboard</div>
+    </div>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <button onclick="location.href='/dashboard/create'" type="button" class="btn btn-lg col-2 mt-5">+ New Post</button>
+        </div>
+    </div>
+
+    {{#if posts.length}}
+    <ul class="list-group">
+        {{#each posts as |post|}}
+        <li class="list-group-item m-4 p-4 d-flex justify-content-between dashboard-list">
+             <a href="/dashboard/edit/{{post.id}}" class="h4">{{post.title}}</a>
+            <span class="h4">{{format_date post.created_at}}</span>
+        </li>
+        {{/each}}
+      </ul>
+    {{/if}}
