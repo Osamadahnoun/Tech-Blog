@@ -1,6 +1,6 @@
 <div class="card container-fluid mt-5 w-75 ps-0 pe-0">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item one h3 d-flex justify-content-between">{{ post.title }}<span class="h6">{{ post.user.username }} on {{ post.created_at }}</span></li>
+          <li class="list-group-item one h3 d-flex justify-content-between">{{ post.title }}<span class="h6">{{ post.user.username }} on {{ format_date post.created_at }}</span></li>
           <li class="list-group-item two h5">{{ post.content }}</li>
         </ul>
       </div>
