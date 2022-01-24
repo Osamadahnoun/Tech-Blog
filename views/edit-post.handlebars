@@ -4,19 +4,22 @@
 
           <li class="mb-3 list-group-item two">
             <label for="exampleFormControlInput1" class="form-label">Title</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Post Title" value="{{post.title}}">
+            <input name= "post-title" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Post Title" value="{{post.title}}">
           </li>
 
           <li class="mb-3 list-group-item two">
-            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Post Content">{{post.content}}</textarea>
+            <label for="post-content" class="form-label">Content</label>
+            <textarea class="form-control" id="post-content" rows="3" placeholder="Post Content">{{post.content}}</textarea>
           </li>
 
           <li class="mb-3 list-group-item two">
-            <button type="button" class="btn btn-lg col-6 w-100 p-2">Update Post</button>
+            <button type="button" class="btn btn-lg col-6 w-100 p-2 edit-post-btn">Update Post</button>
           </li>
           <li class="mb-3 list-group-item two">
-            <button type="button" class="btn btn-lg col-6 w-100 p-2">Delete</button>
+            <button type="button" class="btn btn-lg col-6 w-100 p-2 delete-post-btn">Delete</button>
           </li>
         </ul>
       </div>
+
+    <script src="/javascript/edit-post.js"></script>
+    <script src="/javascript/delete-post.js"></script>
