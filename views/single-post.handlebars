@@ -1,0 +1,43 @@
+<div class="card container-fluid mt-5 w-75 ps-0 pe-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item one h3 d-flex justify-content-between">{{ post.title }}<span class="h6">{{ post.user.username }} on {{ post.created_at }}</span></li>
+          <li class="list-group-item two h5">{{ post.content }}</li>
+        </ul>
+      </div>
+
+{{#if loggedIn}}
+<div class="card container-fluid mt-5 w-75 ps-0 pe-0 container-fluid">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item one h3">Create New Comment</li>
+
+          <li class="mb-3 list-group-item two">
+            <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+            <textarea class="form-control" id="comment-text" name="comment-body" rows="3" placeholder="Write Comment"></textarea>
+          </li>
+
+          <li class="mb-3 list-group-item two">
+            <button type="button" class="btn btn-lg col-6 w-100 p-2 comment-btn">Create New Comment</button>
+          </li>
+        </ul>
+      </div>
+{{/if}}
+
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="border-bottom border-secondary h3 p-4 m-4">Comments</div>
+            </div>
+            
+        {{#each post.comments}}
+      <div class="card container-fluid mt-5 w-75 ps-0 pe-0 mb-5">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item one p-3"></li>
+          <li class="list-group-item two h5">
+              <div class="m-4">{{comment_text}}</div> 
+              <div class="m-4">~{{user.username}} on {{created_at}}</div> 
+            </li>
+        </ul>
+      </div>
+        {{/each}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

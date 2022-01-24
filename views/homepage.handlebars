@@ -1,8 +1,8 @@
     {{#each posts as |post|}}
     <div class="card container-fluid mt-5 w-75 ps-0 pe-0">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item one h3 d-flex justify-content-between"><a href="./comment.html">{{ title }}</a><span class="h6">{{ user.username }} on {{ created_at }}</span></li>
-          <li class="list-group-item two h5"><a href="./comment.html">{{ content }}</a></li>
+          <li class="list-group-item one h3 d-flex justify-content-between"><a href="/post/{{post.id}}">{{ title }}</a><span class="h6">{{ user.username }} on {{ created_at }}</span></li>
+          <li class="list-group-item two h5"><a href="/post/{{post.id}}">{{ content }}</a></li>
         </ul>
       </div>
     {{/each}}
